@@ -28,7 +28,7 @@ export default function Service() {
   );
 
   return (
-    <section className="text-white md:py-20">
+    <section className="text-white py-10">
       <motion.div
         className="container mx-auto md:px-4"
         initial={{ y: 100 }}
