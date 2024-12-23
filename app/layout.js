@@ -1,7 +1,5 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 
 export const metadata = {
@@ -13,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="flex flex-col min-h-screen">
+        <div>
           <Navbar />
-          <main className="flex-grow container mx-auto p-4">{children}</main>
+          <main>{children}</main>
           <Footer />
         </div>
       </body>

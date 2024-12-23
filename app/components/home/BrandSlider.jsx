@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import config from "../config";
+import config from "../../config";
 
 const BrandSlider = () => {
   return (

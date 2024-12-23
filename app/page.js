@@ -1,13 +1,13 @@
-import BrandSlider from "./components/BrandSlider";
-import CaseStudies from "./components/CaseStudies";
-import Hero from "./components/Hero";
-import ImageHero from "./components/ImageHero";
-import Service from "./components/Service";
-import SpecialService from "./components/SpecialService";
-import Specialties from "./components/Specialties";
-import Testimonials from "./components/Testimonials";
+import BrandSlider from "./components/home/BrandSlider";
+import CaseStudies from "./components/home/CaseStudies";
+import Hero from "./components/home/Hero";
+import ImageHero from "./components/home/ImageHero";
+import Service from "./components/home/Service";
+import SpecialService from "./components/home/SpecialService";
+import Specialties from "./components/home/Specialties";
+import Testimonials from "./components/home/Testimonials";
 
-import TextSlider from "./components/TextSlider";
+import TextSlider from "./components/home/TextSlider";
 
 const Home = () => {
   return (

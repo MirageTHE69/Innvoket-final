@@ -1,4 +1,4 @@
-import config from "../config";
+import config from "../../config";
 
 const Specialties = () => {
   const { header, largeImageSection, gridItems } = config.specialties;

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import config from "../config";
+import config from "../../config";
 
 const CaseStudies = () => {
   const { caseStudies } = config;

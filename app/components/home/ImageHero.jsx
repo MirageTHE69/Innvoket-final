@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Atom } from "lucide-react";
-import config from "../config";
+import config from "../../config";
 
 const ImageHero = () => {
   const { values, additionalValues, backgroundImage } = config.heroSection;

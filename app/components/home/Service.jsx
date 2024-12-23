@@ -1,18 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import config from "../config";
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import config from "../../config";
 
-export default function SpecialService() {
+export default function Service() {
   const ServiceCard = ({ icon: Icon, title, description, link }) => (
-    <motion.div
-      className="bg-[#1A1A1A] rounded-2xl p-6 flex flex-col justify-between space-y-20 md:space-y-36 shadow-lg"
-      initial={{ y: 100 }}
-      whileInView={{ y: 0 }}
-      transition={{ duration: 1 }}
-    >
+    <div className="bg-[#1A1A1A] rounded-2xl p-6 flex flex-col justify-between space-y-20 md:space-y-36 shadow-lg">
       <div className="flex flex-col space-y-4">
         <div className="bg-[#2A2A2A] w-12 h-12 flex items-center justify-center rounded-xl">
           <Icon size={24} className="text-orange-500" />
@@ -29,50 +24,50 @@ export default function SpecialService() {
           <ArrowRight size={20} className="ml-2" />
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 
   return (
-    <section className="text-white py-20 md:max-w-[75vw] mx-auto">
+    <section className="text-white py-10">
       <motion.div
-        className="container mx-auto px-4"
+        className="container mx-auto md:px-4"
         initial={{ y: 100 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="flex flex-col md:flex-row md:items-center md:space-x-4 my-10 md:my-20 text-center md:text-left"
+          className="flex flex-col md:flex-row items-center md:space-x-4 my-10 md:my-20"
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
         >
           <motion.span
-            className="text-orange-500 font-bold rounded-full bg-[#232323] px-4 py-2 mb-4 md:mb-0"
+            className="text-orange-500 font-bold rounded-full bg-[#232323] p-1 max-w-max mb-4 md:mb-0"
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
             transition={{ duration: 1 }}
           >
-            {config.specialService.subheading}
+            {config.services.subheading}
           </motion.span>
           <motion.h2
-            className="text-md md:text-3xl font-bold font-unbounded"
+            className="text-3xl md:text-4xl font-bold font-unbounded text-center md:text-left"
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
             transition={{ duration: 1 }}
           >
-            {config.specialService.heading}
+            {config.services.heading}
           </motion.h2>
         </motion.div>
 
         <motion.div
-          className="text-center md:text-right mb-20"
+          className="text-center md:text-right mb-12"
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
         >
           <Link
-            href="/pages/contact"
-            className="bg-[#FF7A30] py-3 px-2 md:px-7 rounded-full transition-colors text-black"
+            href="/pages/services"
+            className="bg-[#FF7A30] py-3 px-7 rounded-full transition-colors text-black text-sm md:text-base"
           >
             VIEW ALL SERVICES ↗
           </Link>
@@ -84,16 +79,22 @@ export default function SpecialService() {
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
         >
-          {config.specialService.cards.map((card) => {
+          {config.services.cards.map((card) => {
             const IconComponent = require("lucide-react")[card.icon];
             return (
-              <ServiceCard
+              <motion.div
                 key={card.id}
-                icon={IconComponent}
-                title={card.title}
-                description={card.description}
-                link={card.link}
-              />
+                initial={{ y: 100 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                <ServiceCard
+                  icon={IconComponent}
+                  title={card.title}
+                  description={card.description}
+                  link={card.link}
+                />
+              </motion.div>
             );
           })}
         </motion.div>
