@@ -89,7 +89,7 @@ const Services = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 custom-break-1200:grid-cols-3 gap-8 w-90 2xl:w-[60vw] mx-3 2xl:mx-auto my-14 2xl:my-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 custom-break-1200:grid-cols-3 gap-8 w-90 2xl:w-[60vw] mx-3 2xl:mx-auto my-14 2xl:my-20">
           {feature_cards.map((card, index) => (
             <FeaturesCard
               key={index}

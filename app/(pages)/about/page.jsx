@@ -15,7 +15,7 @@ const about = () => {
 
   return (
     <div className="bg-black overflow-hidden">
-      <div className="wrapper pt-5 h-[50vh] lg:mb-[3rem] custom-break-1200:mb-[15rem] xl:mb-[40rem] 2xl:mb-[100rem] flex items-center justify-center">
+      <div className="wrapper pt-5 h-[50vh] lg:mb-[3rem] custom-break-1200:mb-[15rem] xl:mb-[17rem] flex items-center justify-center">
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{
@@ -23,7 +23,7 @@ const about = () => {
             opacity: 1,
             transition: { duration: 2, ease: "easeInOut" },
           }}
-          className="celestial-solutions w-[95%] m-auto h-[171.6px] md:h-[263.12px] lg:h-[417.52px] xl:h-[965.68px] 2xl:h-[2061.36px] flex flex-col justify-center md:justify-end items-center rounded-[2rem]"
+          className="celestial-solutions w-[95%] m-auto h-[171.6px] md:h-[263.12px] lg:h-[417.52px] xl:h-[965.68px] 2xl:h-[80vh] flex flex-col justify-center md:justify-end items-center rounded-[2rem]"
         > 
           <motion.h1
             initial={{ y: -200 }}

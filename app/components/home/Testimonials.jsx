@@ -35,7 +35,8 @@ const Testimonials = () => {
         transition={{
           duration: 20, 
           ease: "linear",
-          repeat: Infinity, 
+          repeat: Infinity,
+           
         }}
       >
         {testimonialsData.map((testimonial, index) => (
