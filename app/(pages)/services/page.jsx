@@ -37,7 +37,7 @@ const Services = () => {
   const { heading, service_cards, feature_cards } = config.servicesPage;
 
   return (
-    <div className="bg-[#0A0A0A] text-white py-20">
+    <div className="text-white py-20">
       {/* Title */}
       <motion.div
         initial={{ y: -200, opacity: 0 }}

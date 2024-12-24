@@ -17,16 +17,17 @@ export default function FounderProfileCard() {
         transition: { duration: 2, ease: "easeInOut" },
       }}
       viewport={{ once: true }}
-      className="min-h-screen w-[95vw] 2xl:w-[90vh] bg-black text-white mx-auto flex flex-col gap-10 lg:gap-[3.75rem] "
+      className="min-h-screen w-[95vw] 2xl:w-[90vw] text-white mx-auto flex flex-col gap-10 lg:gap-[3.75rem] "
     >
       <p className=" xl:mb-[2rem]  flex flex-col custom-break-1200:flex-row xl:flex-row justify-center custom-break-1200:self-start xl:self-start items-center gap-3">
         <span className="text-[#F58327] bg-[#232323] text-[0.75rem] xl:text-[0.688rem] text-nowrap leading-[1.5rem] xl:leading-[1.375rem] font-black inline rounded-full px-3 py-1 uppercase satoshi">
           About Founder
         </span>
-        <h2 className="unbounded-400 text-center custom-break-1200:text-left xl:text-left text-white text-[1.75rem] lg:text-[2.25rem] xl:text-[2.5rem] leading-[1.938rem] lg:leading-[2.5rem] xl:leading-[2.75rem]">
-          Meet The Founder
-        </h2>
       </p>
+      <h2 className="unbounded-400 text-center custom-break-1200:text-left xl:text-left text-white text-[1.75rem] lg:text-[2.25rem] xl:text-[2.5rem] leading-[1.938rem] lg:leading-[2.5rem] xl:leading-[2.75rem]">
+        Meet The Founder
+      </h2>
+
       <p className="text-[#858585] text-[1.375rem] lg:text-[1.625rem] xl:text-[1.875rem] font-normal m-1 leading-[1.938rem] lg:leading-[2.25rem] xl:leading-[2.438rem]">
         {parse(FounderSection.firstPara)}
       </p>
@@ -35,7 +36,7 @@ export default function FounderProfileCard() {
           {/* Left Column - Image and Name */}
           <div className="relative mx-auto founder-profile overflow-hidden h-[70vh] w-[90vw] lg:flex-[2]">
             {/* Orange Half Ellipse */}
-            <div className="absolute bottom-0 inset-0 mx-auto w-[95%] md:w-[50%] lg:w-[100%] xl:w-[90%] 2xl:w-[100%] h-[70%] lg:h-[100%] xl:h-[100%] 2xl:h-[40%] bg-[#F58327] rounded-t-full lg:top-[60%] lg:translate-y-[-40%] top-[50%] translate-y-[-30%]"></div>
+            <div className="absolute bottom-0 inset-0 mx-auto w-[95%] md:w-[50%] lg:w-[100%] xl:w-[90%] 2xl:w-[100%] h-[70%] lg:h-[100%] xl:h-[100%] 2xl:h-[60%] bg-[#F58327] rounded-t-full lg:top-[60%] lg:translate-y-[-40%] top-[50%] translate-y-[-30%]"></div>
 
             {/* Profile Image */}
             <div className="absolute flex flex-col justify-end items-center mx-auto w-full h-full">
@@ -44,7 +45,7 @@ export default function FounderProfileCard() {
                 alt={`Profile picture of ${FounderSection.name} ${FounderSection.surname}`}
                 width={10000}
                 height={10000}
-                className="grayscale founder-profile lg:w-auto lg:h-[70vh] w-60 md:w-[40vw] 2xl:w-[60vw] h-90 md:h-[50vw] 2xl:h-[50vh]"
+                className="grayscale founder-profile lg:w-auto lg:h-[70vh] w-60 md:w-[40vw] 2xl:w-[60vw] h-90 md:h-[50vh] 2xl:h-[50vh]"
                 priority
               />
             </div>

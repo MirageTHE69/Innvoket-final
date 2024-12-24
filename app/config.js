@@ -8,7 +8,7 @@ const config = {
   //Text Slider
 
   textSlider: {
-    message: "INNVOKET WE BUILD FUTURE",
+    message: ". INNVOKET WE BUILD FUTURE",
   },
 
   //Services

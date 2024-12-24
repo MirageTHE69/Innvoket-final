@@ -6,7 +6,7 @@ const BrandMarquee = () => {
   const duplicatedLogos = [...brandMarqueeLogos, ...brandMarqueeLogos];
 
   return (
-    <div className="bg-black">
+    <div>
       {/* Upper Marquee*/}
       <div className="marquee">
         <div className="marquee-content">

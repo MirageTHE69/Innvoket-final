@@ -40,14 +40,14 @@ const ImageGallery = ({ leftImages, rightImages }) => {
         </div>
       </div>
 
-      <div className="flex flex-col w-full 2xl:w-[65vw] gap-4 p-4 mx-auto">
+      <div className="flex flex-col w-full 2xl:w-[95vw] gap-4 p-4 mx-auto">
         {leftImages.map((leftImage, index) => {
           const isEvenRow = index % 2 === 1;
 
           return (
             <div
               key={`row-${index}`}
-              className={`flex ${"custom-break-1200:flex-row flex-col h-[75vh] md:h-[70vh] lg:h-[85vh] xl:h-[35vh] 2xl:h-[18vh] w-full gap-4"}`}
+              className={`flex ${"custom-break-1200:flex-row flex-col h-[75vh] md:h-[70vh] lg:h-[85vh] xl:h-[35vh] 2xl:h-[70vh] w-full gap-4"}`}
             >
               {/* Left Image Div */}
               <div

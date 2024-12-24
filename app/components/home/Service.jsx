@@ -4,13 +4,19 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import config from "../../config";
+import {
+  SeoSvg,
+  ContentSvg,
+  WebsiteDesignSvg,
+  SocialMediaSvg,
+} from "../../components/services/ServiceSvg";
 
 export default function Service() {
-  const ServiceCard = ({ icon: Icon, title, description, link }) => (
-    <div className="bg-[#1A1A1A] rounded-2xl p-6 flex flex-col justify-between space-y-20 md:space-y-36 shadow-lg">
+  const ServiceCard = ({ Icon, title, description, link }) => (
+    <div className="bg-[#1A1A1A] rounded-2xl p-6 flex flex-col justify-between space-y-20 md:space-y-36 shadow-lg group">
       <div className="flex flex-col space-y-4">
         <div className="bg-[#2A2A2A] w-12 h-12 flex items-center justify-center rounded-xl">
-          <Icon size={24} className="text-orange-500" />
+          <Icon className="text-orange-500" />
         </div>
         <h3 className="text-2xl font-semibold">{title}</h3>
       </div>
@@ -18,14 +24,45 @@ export default function Service() {
         <p className="text-gray-400">{description}</p>
         <Link
           href={link}
-          className="flex items-center text-white font-semibold hover:text-orange-500 transition-colors"
+          className="text-white font-semibold pt-5 text-[0.75rem] leading-[1.5rem] flex items-center gap-2 no-underline unbounded-400"
         >
-          <span>Learn More</span>
-          <ArrowRight size={20} className="ml-2" />
+          LEARN MORE
+          <span className="w-7 h-7 rounded-full border-[#333] border p-1 flex justify-center items-center transition duration-900 bg-transparent group-hover:bg-[#F58327]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              focusable="false"
+              className="transition-transform duration-300 group-hover:rotate-[45deg]"
+              style={{
+                userSelect: "none",
+                width: "100%",
+                height: "100%",
+                display: "inline-block",
+                fill: "var(--token-a3567fc0-2c6f-4fa8-ac8f-89ddd158e98d, rgb(255, 255, 255))",
+                color:
+                  "var(--token-a3567fc0-2c6f-4fa8-ac8f-89ddd158e98d, rgb(255, 255, 255))",
+                flexShrink: 0,
+              }}
+            >
+              <g
+                color="var(--token-a3567fc0-2c6f-4fa8-ac8f-89ddd158e98d, rgb(255, 255, 255))"
+                weight="regular"
+              >
+                <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z" />
+              </g>
+            </svg>
+          </span>
         </Link>
       </div>
     </div>
   );
+
+  const iconMap = {
+    Globe: SeoSvg,
+    SquareMenu: ContentSvg,
+    PanelTop: WebsiteDesignSvg,
+    SocialMedia: SocialMediaSvg,
+  };
 
   return (
     <section className="text-white py-10">
@@ -80,7 +117,7 @@ export default function Service() {
           transition={{ duration: 1 }}
         >
           {config.services.cards.map((card) => {
-            const IconComponent = require("lucide-react")[card.icon];
+            const IconComponent = iconMap[card.icon];
             return (
               <motion.div
                 key={card.id}
@@ -89,7 +126,7 @@ export default function Service() {
                 transition={{ duration: 1 }}
               >
                 <ServiceCard
-                  icon={IconComponent}
+                  Icon={IconComponent}
                   title={card.title}
                   description={card.description}
                   link={card.link}

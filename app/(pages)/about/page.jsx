@@ -14,7 +14,7 @@ const about = () => {
   const { leftImages, rightImages } = about.imageGallery;
 
   return (
-    <div className="bg-black overflow-hidden">
+    <div className="overflow-hidden py-10">
       <div className="wrapper pt-5 h-[50vh] lg:mb-[3rem] custom-break-1200:mb-[15rem] xl:mb-[17rem] flex items-center justify-center">
         <motion.div
           initial={{ y: 100, opacity: 0 }}
@@ -23,12 +23,12 @@ const about = () => {
             opacity: 1,
             transition: { duration: 2, ease: "easeInOut" },
           }}
-          className="celestial-solutions w-[95%] m-auto h-[171.6px] md:h-[263.12px] lg:h-[417.52px] xl:h-[965.68px] 2xl:h-[80vh] flex flex-col justify-center md:justify-end items-center rounded-[2rem]"
+          className="celestial-solutions w-[95%] m-auto h-[171.6px] md:h-[263.12px] lg:h-[417.52px] xl:h-[965.68px] 2xl:h-[70vh] flex flex-col justify-center md:justify-end items-center rounded-[2rem]"
         > 
           <motion.h1
             initial={{ y: -200 }}
             animate={{ y: 0, transition: { duration: 2, ease: "easeInOut" } }}
-            className="text-center unbounded-400 md:mb-8 text-[1.688rem] custom-break-1200:text-[3.125rem] lg:text-[2.5rem] xl:text-[3.125rem] leading-[1.875rem] custom-break-1200:leading-[3.438rem] lg:leading-[2.75rem] xl:leading-[3.438rem] lg:px-[10rem] xl:px-[15rem] 2xl:px-[50rem]"
+            className="text-center unbounded-400 md:mb-8 text-[1.688rem] custom-break-1200:text-[3.125rem] lg:text-[2.5rem] xl:text-[3.125rem] leading-[1.875rem] custom-break-1200:leading-[3.438rem] lg:leading-[2.75rem] xl:leading-[3.438rem] lg:px-[10rem] xl:px-[15rem] 2xl:px-[10rem]"
           >
             {parse(about.welcome)}
           </motion.h1>
@@ -41,7 +41,7 @@ const about = () => {
         transition={{ duration: 2, ease: "easeInOut" }}
         className="flex flex-col items-center justify-center"
       >
-        <div className="flex flex-col justify-center items-center w-[95vw] custom-break-1200:w-[92vw] xl:w-[95vw] 2xl:w-[65vw] gap-9 md:gap-7 lg:gap-14 xl:gap-6 mx-auto">
+        <div className="flex flex-col justify-center items-center w-[95vw] custom-break-1200:w-[92vw] xl:w-[95vw] 2xl:w-[95vw] gap-9 md:gap-7 lg:gap-14 xl:gap-6 mx-auto">
           <p className="mt-5 xl:mb-[2rem]  flex flex-col custom-break-1200:flex-row xl:flex-row justify-center  custom-break-1200:self-start xl:self-start items-center gap-3">
             <span className="text-[#F58327] bg-[#232323] text-[0.75rem] xl:text-[0.688rem] text-nowrap leading-[1.5rem] xl:leading-[1.375rem] font-black inline rounded-full px-3 py-1 uppercase satoshi">
               WHO WE ARE
@@ -50,7 +50,7 @@ const about = () => {
               About our Company
             </h2>
           </p>
-          <div className="bg-black w-[95vw] custom-break-1200:w-[92vw] xl:w-[95vw] 2xl:w-[65vw] h-fit text-gray-300 py-2 flex flex-col custom-break-1200:flex-row xl:flex-row gap-8 xl:gap-16">
+          <div className="w-[95vw] custom-break-1200:w-[92vw] xl:w-[95vw] 2xl:w-[95vw] h-fit text-gray-300 py-2 flex flex-col custom-break-1200:flex-row xl:flex-row gap-8 xl:gap-16">
             {/* Left Section */}
             <div className="w-[92vw] custom-break-1200:w-[50%] xl:w-[50%] mx-auto">
               <div>
@@ -93,7 +93,7 @@ const about = () => {
             <span> worked with</span>
           </h2>
         </p>
-        <div className="bg-black h-[30vh] md:h-[156px] flex items-center justify-center w-[90vw] md:w-[95vw] lg:w-[93vw] 2xl:w-[65vw] overflow-hidden border-[#232323] border rounded-[2rem] mx-auto mt-7">
+        <div className="h-[30vh] md:h-[156px] flex items-center justify-center w-[90vw] md:w-[95vw] lg:w-[93vw] 2xl:w-[95vw] overflow-hidden border-[#232323] border rounded-[2rem] mx-auto mt-7">
           <BrandMarquee />
         </div>
       </motion.div>

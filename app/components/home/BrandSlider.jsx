@@ -4,7 +4,7 @@ import config from "../../config";
 
 const BrandSlider = () => {
   return (
-    <div className="py-10 text-center">
+    <div className="mt-4 md:mt-40 px-8 text-center">
       <div className="text-orange-500 font-bold rounded-full bg-[#232323] inline-block p-2">
         <h2>{config.brandSlider.heading}</h2>
       </div>
