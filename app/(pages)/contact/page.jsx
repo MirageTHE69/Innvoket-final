@@ -1,24 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react"; // Import useEffect and useState
 import { motion } from "framer-motion";
-import { MapContainer, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 import config from "../../config";
 
 const Contact = () => {
-  const [isClient, setIsClient] = useState(false); // State to check if the component is rendered on the client
-
-  useEffect(() => {
-    // This will set the state to true when the component is mounted on the client side
-    setIsClient(true);
-  }, []);
-
-  const { hotline, address, email, openingHours, mapCenter, socialMedia } =
-    config.contact;
-
-  // Render nothing until it's client-side
-  if (!isClient) return null;
+  const { hotline, address, email, openingHours, socialMedia } = config.contact;
 
   return (
     <section className="max-w-[90vw] md:max-w-[80vw] mx-auto">
@@ -64,24 +50,6 @@ const Contact = () => {
               <li key={index}>{platform}</li>
             ))}
           </ul>
-        </div>
-
-        <div className="py-10 md:col-span-3">
-          {/* Render map only on the client */}
-          {isClient && (
-            <MapContainer
-              className="h-80 rounded-3xl"
-              center={mapCenter}
-              zoom={13}
-              scrollWheelZoom={false}
-              zoomControl={false}
-            >
-              <TileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              />
-            </MapContainer>
-          )}
         </div>
       </motion.div>
     </section>
