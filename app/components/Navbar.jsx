@@ -15,8 +15,8 @@ const Navbar = () => {
 
   const isActive = (path) => {
     return pathname === path
-      ? "bg-[#232323] text-[#f58327]" 
-      : "hover:bg-[#232323] text-white"; 
+      ? "bg-[#232323] text-[#f58327]"
+      : "hover:bg-[#232323] text-white";
   };
 
   return (
@@ -30,6 +30,7 @@ const Navbar = () => {
         <Link href="/about" className={`rounded-full px-4 py-2 ${isActive("/about")}`}>ABOUT</Link>
         <Link href="/services" className={`rounded-full px-4 py-2 ${isActive("/services")}`}>SERVICES</Link>
         <Link href="/projects" className={`rounded-full px-4 py-2 ${isActive("/projects")}`}>PROJECTS</Link>
+        <Link href="/staffing" className={`rounded-full px-4 py-2 ${isActive("/staffing")}`}>PARTNER WITH US</Link>
         <Link href="/blog" className={`rounded-full px-4 py-2 ${isActive("/blog")}`}>BLOG</Link>
         <Link href="/contact" className={`rounded-full px-4 py-2 ${isActive("/contact")}`}>CONTACT</Link>
       </div>
@@ -51,6 +52,7 @@ const Navbar = () => {
         <Link href="/about" className={`w-full text-center rounded-full px-4 py-2 ${isActive("/about")}`}>ABOUT</Link>
         <Link href="/services" className={`w-full text-center rounded-full px-4 py-2 ${isActive("/services")}`}>SERVICES</Link>
         <Link href="/projects" className={`w-full text-center rounded-full px-4 py-2 ${isActive("/projects")}`}>PROJECTS</Link>
+        <Link href="/staffing" className={`w-full text-center rounded-full px-4 py-2 ${isActive("/staffing")}`}>PARTNER WITH US</Link>
         <Link href="/blog" className={`w-full text-center rounded-full px-4 py-2 ${isActive("/blog")}`}>BLOG</Link>
         <Link href="/contact" className={`w-full text-center rounded-full px-4 py-2 ${isActive("/contact")}`}>CONTACT</Link>
       </div>
