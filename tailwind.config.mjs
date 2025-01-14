@@ -11,8 +11,8 @@ module.exports = {
         "custom-break-1200": "1200px", // Custom screen size
       },
       colors: {
-        background: "var(--background)", // Example of extending colors
-        foreground: "var(--foreground)", // Example of extending colors
+        background: "var(--background)", 
+        foreground: "var(--foreground)", 
       },
     },
   },

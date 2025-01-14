@@ -57,7 +57,7 @@ const Navbar = () => {
         <Link href="/contact" className={`w-full text-center rounded-full px-4 py-2 ${isActive("/contact")}`}>CONTACT</Link>
       </div>
 
-      <Link href="/pages/contact" className="hidden md:block bg-[#FF7A30] rounded-full px-4 py-2"> Contact Us ↗</Link>
+      <Link href="contact" className="hidden md:block bg-[#FF7A30] rounded-full px-4 py-2"> Contact Us ↗</Link>
     </nav>
   );
 };
