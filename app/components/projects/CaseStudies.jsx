@@ -39,7 +39,7 @@ const CaseStudies = ({ image, title, description }) => {
 
       {/* Case Study Card */}
       <div
-        className="relative flex flex-col items-center justify-center custom-break-1200:flex-row w-full text-white rounded-lg overflow-hidden shadow-lg bg-[#0A0A0A] gap-4 mb-8 group cursor-none"
+        className="relative flex flex-col items-center justify-center custom-break-1200:flex-row w-full text-white rounded-lg overflow-hidden shadow-lg gap-4 mb-8 group cursor-none"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >

@@ -4,7 +4,7 @@ const Specialties = () => {
   const { header, largeImageSection, gridItems } = config.specialties;
 
   return (
-    <section className="text-white py-20">
+    <section className="text-white px-4 py-20">
       <div className="md:px-6 text-center md:text-left">
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-x-4 md:my-14">
           <span className="text-orange-500 text-xs font-bold rounded-full bg-[#232323] p-2 max-w-max">

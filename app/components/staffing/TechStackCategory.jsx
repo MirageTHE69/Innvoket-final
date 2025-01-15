@@ -11,7 +11,7 @@ const TechStackCategory = ({ title, technologies }) => {
       <h3 className="text-2xl font-semibold mb-6 text-center text-white">{title}</h3>
 
       {/* Technology Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {technologies.map((tech, index) => (
           <div
             key={index}

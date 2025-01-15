@@ -40,7 +40,7 @@ const Blog = () => {
           <span className="text-black text-sm unbounded-600">VIEW</span>
         </div>
       </div>
-      <section className="py-20">
+      <section className="px-4 py-20">
         <motion.h2
           className="text-xl md:text-6xl text-white text-center mb-8"
           initial={{ y: -100, opacity: 0 }}

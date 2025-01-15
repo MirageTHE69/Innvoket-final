@@ -214,12 +214,12 @@ const config = {
     ],
     menuLinks: [
       { title: "Home", link: "/" },
-      { title: "About", link: "/pages/about" },
-      { title: "Services", link: "/pages/services" },
-      { title: "Projects", link: "/pages/projects" },
-      { title: "Blog", link: "/pages/blog" },
-      { title: "Review", link: "/pages/reviews" },
-      { title: "Contact", link: "/pages/contact" },
+      { title: "About", link: "/about" },
+      { title: "Services", link: "/services" },
+      { title: "Projects", link: "/projects" },
+      { title: "Blog", link: "/blog" },
+      { title: "Review", link: "/reviews" },
+      { title: "Contact", link: "/contact" },
     ],
     serviceLinks: [
       { title: "SEO", link: "/services/seo" },
@@ -232,7 +232,7 @@ const config = {
     ],
     otherPagesLinks: [
       { title: "License", link: "/license" },
-      { title: "404", link: "/pages/404" },
+      { title: "404", link: "/404" },
     ],
     socialLinks: [
       { platform: "Facebook", url: "https://facebook.com", icon: "Facebook" },
@@ -393,18 +393,18 @@ const config = {
                 <span className="text-[#F58327]"> Celestial Solutions!</span>`,
     aboutContent: `Let&apos;s get acquainted! We&apos;re not your average digital
                     marketing agency - we&apos;re a team of passionate individuals
-                    who eat, sleep, and breathe{" "}
+                    who eat, sleep, and breathe
                     <span className="text-white">
                       creativity, innovation, and all things digital.
-                    </span>{" "}
+                    </span>
                     At <span className="text-white ">Celestial Solutions</span>,
-                    we&apos;re on a mission to make your online{" "}
+                    we&apos;re on a mission to make your online
                     <span className="text-[#F58327]">dreams come true</span>, one
-                    pixel at a time! We&apos;re a bunch of{" "}
+                    pixel at a time! We&apos;re a bunch of
                     <span className="text-white">
                       tech-savvy wizards, design enthusiasts, and social media
                       mavens
-                    </span>{" "}
+                    </span>
                     who believe that digital marketing should be fun, exciting,
                     and downright awesome.`,
     Accordion: [

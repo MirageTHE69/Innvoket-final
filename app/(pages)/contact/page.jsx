@@ -7,9 +7,9 @@ const Contact = () => {
   const { hotline, address, email, openingHours, socialMedia } = config.contact;
 
   return (
-    <section className="max-w-[90vw] md:max-w-[80vw] mx-auto">
+    <section className="max-w-[90vw] mx-auto">
       <motion.h2
-        className="py-20 font-unbounded text-white text-xl md:text-5xl text-center"
+        className="py-20 font-unbounded text-white text-2xl md:text-5xl text-center"
         initial={{ y: -100 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1 }}
@@ -18,8 +18,8 @@ const Contact = () => {
       </motion.h2>
 
       <motion.div
-        className="bg-[#1f1f1fc4] rounded-3xl text-white grid grid-cols-1 md:grid-cols-3 gap-2 p-4 h-full text-xs md:text-xl font-unbounded"
-        initial={{ y: 100 }}
+        className="bg-[#1f1f1fc4] rounded-3xl text-white grid grid-cols-1 md:grid-cols-3 gap-2 p-4 h-full md:text-xl font-unbounded"
+        initial={{ y: -100 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1 }}
       >

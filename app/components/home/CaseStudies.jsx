@@ -40,7 +40,7 @@ const CaseStudies = () => {
         </div>
       </div>
       <motion.div
-        className="py-20 md:px-8 flex flex-col items-center justify-center"
+        className="py-20 px-4 md:px-8 flex flex-col items-center justify-center"
         initial={{ y: 100 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1 }}

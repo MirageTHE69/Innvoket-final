@@ -81,10 +81,10 @@ const Staffing = () => {
         <p className="text-[#E17622] text-lg mb-4 satoshi">
           Dedicated Developer Hiring & Staff Augmentation
         </p>
-        <h1 className="text-4xl font-medium mb-4 leading-tight">
+        <h1 className="text-xl md:text-4xl font-medium mb-4 leading-tight">
           Empowering Your Business with
           <br />
-          <span className="block bg-[#E17622] text-black py-2 px-6 inline-block rounded-lg mt-4">
+          <span className="inline-block bg-[#E17622] text-black py-2 px-6 rounded-lg mt-4">
             Expert Development Teams
           </span>
         </h1>
@@ -99,7 +99,7 @@ const Staffing = () => {
         </button>
       </section>
 
-      {/* Services Section */}
+      
       {/* Services Section */}
       <section className="my-16">
         <h2 className="text-center text-3xl font-semibold satoshi mb-8">Our Services</h2>
@@ -129,7 +129,7 @@ const Staffing = () => {
       <section className="my-16">
         <h2 className="text-center text-3xl font-semibold satoshi mb-8">Our Tech Stack</h2>
         <section className=" py-8">
-          <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="card bg-[#1f1f1f] shadow-lg rounded-lg p-6 text-center">
               <div className="text-5xl font-extrabold text-[#E17622]">20+</div>
               <div className="text-xl font-semibold text-gray-300">Developers</div>

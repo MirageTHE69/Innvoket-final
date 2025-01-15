@@ -14,7 +14,7 @@ export default function FaqSection() {
         transition: { duration: 2, ease: "easeInOut" },
       }}
       viewport={{ once: true }}
-      className="bg-[#0A0A0A] m-auto w-[95vw] lg:w-[90vw] xl:w-[70vw] 2xl:w-[40vw] mt-10 md:mt-20 custom-break-1200:mt-32 lg:mt-36 xl:mt-48"
+      className="m-auto w-[95vw] lg:w-[90vw] xl:w-[70vw] 2xl:w-[40vw] mt-10 md:mt-20 custom-break-1200:mt-32 lg:mt-36 xl:mt-48"
     >
       <div className="flex flex-col">
         <div className="text-center flex flex-col justify-center items-center mb-12 lg:mb-16 xl:mb-20">

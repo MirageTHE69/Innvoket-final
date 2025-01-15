@@ -24,46 +24,67 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <section className="flex flex-col items-center justify-center space-y-8 my-4 md:my-16 overflow-hidden relative">
+    <section className="flex flex-col items-center justify-center my-4 md:my-16 overflow-hidden relative px-4">
       
-      <div className="text-gray-500 text-3xl md:text-9xl font-bold mb-12">
+      <div className="text-gray-500 text-3xl md:text-9xl font-bold mb-12 z-0">
         TESTIMONIAL
       </div>
 
-      <motion.div
-        animate={{ y: ["100%", "-100%"] }} 
-        transition={{
-          duration: 20, 
-          ease: "linear",
-          repeat: Infinity,
-           
-        }}
-      >
-        {testimonialsData.map((testimonial, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.5, delay: index * 0.2 }} 
-            className="bg-transparent backdrop-blur-sm text-white text-sm md:text-base p-6 rounded-xl border max-w-md shadow-lg mb-8"
-          >
-            <div className="flex items-start space-x-4">
-              <div className="text-orange-400 text-2xl">
-                <span>{testimonial.rating}</span>
+      <div className="-mt-40 z-100 h-[80vh] overflow-hidden flex flex-col my-4">
+        <motion.div
+          initial={{ y: 0 }}
+          animate={{ y: "-100%" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="flex flex-col space-y-4"
+        >
+          {testimonialsData.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-transparent backdrop-blur-sm text-white text-sm md:text-base p-6 rounded-xl md:rounded-3xl border md:w-[600px] md:h-[320px] shadow-lg mb-4" // Added mb-4 to reduce margin between cards
+            >
+              <div className="flex items-start space-x-4">
+                <div className="text-orange-400 text-2xl">
+                  <span>{testimonial.rating}</span>
+                </div>
+              </div>
+              <blockquote className="mt-4 text-gray-300">
+                <p className="font-medium leading-relaxed">{testimonial.text}</p>
+              </blockquote>
+              <div className="mt-4 border-t border-gray-700 pt-4">
+                <p className="text-sm text-gray-400">{testimonial.company}</p>
               </div>
             </div>
-            <blockquote className="mt-4 text-gray-300">
-              <p className="font-medium leading-relaxed">{testimonial.text}</p>
-            </blockquote>
-            <div className="mt-4 border-t border-gray-700 pt-4">
-              <p className="text-sm text-gray-400">{testimonial.company}</p>
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ y: 0 }}
+          animate={{ y: "-100%" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="flex flex-col space-y-4 mt-4" 
+        >
+          {testimonialsData.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-transparent backdrop-blur-sm text-white text-sm md:text-base p-6 rounded-xl md:rounded-3xl border md:w-[600px] md:h-[320px] shadow-lg mb-4" // Added mb-4 to reduce margin between cards
+            >
+              <div className="flex items-start space-x-4">
+                <div className="text-orange-400 text-2xl">
+                  <span>{testimonial.rating}</span>
+                </div>
+              </div>
+              <blockquote className="mt-4 text-gray-300">
+                <p className="font-medium leading-relaxed">{testimonial.text}</p>
+              </blockquote>
+              <div className="mt-4 border-t border-gray-700 pt-4">
+                <p className="text-sm text-gray-400">{testimonial.company}</p>
+              </div>
             </div>
-          </motion.div>
-        ))}
-      </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </section>
   );
 };
-
 
 export default Testimonials;

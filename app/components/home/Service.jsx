@@ -65,7 +65,7 @@ export default function Service() {
   };
 
   return (
-    <section className="text-white py-10">
+    <section className="text-white px-4 py-10">
       <motion.div
         className="container mx-auto md:px-4"
         initial={{ y: 100 }}
