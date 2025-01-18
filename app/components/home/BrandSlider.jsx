@@ -13,7 +13,7 @@ const BrandSlider = () => {
         <h2 className="text-white text-2xl md:text-4xl">{config.brandSlider.subheading}</h2>
       </div>
 
-      <div className=" border overflow-hidden rounded-3xl flex space-x-20 my-4">
+      <div className=" overflow-hidden rounded-3xl flex space-x-20 my-4">
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}

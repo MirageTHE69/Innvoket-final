@@ -19,6 +19,7 @@ import {
   ExpertiseSVG,
   NetworkSVG,
 } from "../../components/services/FeaturesSvg";
+import SpecialService from "../../components/home/SpecialService";
 
 const iconMap = {
   SeoSvg: <SeoSvg />,
@@ -59,7 +60,7 @@ const Services = () => {
           opacity: 1,
           transition: { duration: 2, ease: "easeInOut" },
         }}
-        className="grid grid-cols-1 custom-break-1200:grid-cols-2 gap-2 mx-auto w-[92vw] md:w-[97vw] lg:w-[92vw] xl:w-[95vw] 2xl:w-[60vw]"
+        className="grid grid-cols-1 custom-break-1200:grid-cols-2 gap-2 mx-auto w-[92vw] md:w-[97vw] lg:w-[92vw] xl:w-[95vw]"
       >
         {service_cards.map((card, index) => (
           <ServiceCard
@@ -83,13 +84,13 @@ const Services = () => {
           </span>
         </p>
         <div className="flex justify-center items-center">
-          <h1 className="text-center mt-4 text-white unbounded-400 text-[1.75rem] lg:text-[2.25rem] xl:text-[2.5rem] leading-[1.938rem] lg:leading-[2.5rem] xl:leading-[2.75rem] lg:w-[50vw] xl:w-[40vw] 2xl:w-[25vw] p-1">
+          <h1 className="text-center mt-4 text-white unbounded-400 text-[1.75rem] lg:text-[2.25rem] xl:text-[2.5rem] leading-[1.938rem] lg:leading-[2.5rem] xl:leading-[2.75rem] lg:w-[50vw] xl:w-[40vw] p-1">
             Why we are your best choice
           </h1>
         </div>
 
         {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 custom-break-1200:grid-cols-3 gap-8 w-90 2xl:w-[60vw] mx-3 2xl:mx-auto my-14 2xl:my-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 custom-break-1200:grid-cols-3 gap-1 w-90 mx-3 2xl:mx-auto my-14 2xl:my-20 px-4">
           {feature_cards.map((card, index) => (
             <FeaturesCard
               key={index}
@@ -99,6 +100,8 @@ const Services = () => {
             />
           ))}
         </div>
+
+        <SpecialService />
       </motion.div>
     </div>
   );

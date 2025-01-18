@@ -299,15 +299,15 @@ const config = {
 
   //Contact Page
   contact: {
-    hotline: "(555) 123-4567",
-    address: "123 Main Street, Cityville, Stateburg, 98765",
-    email: "AGENCEE@EMAIL.COM",
+    hotline: "9825720827",
+    address: "4-VATIKA VILLA, LAAL BAUG, MANJALPUR, VADODARA, GUJARAT INDIA",
+    email: "INFO@INNVOKETTECH.COM",
     openingHours: [
       { days: "MON TO FRI", hours: "9:00AM - 8:30PM" },
       { days: "SAT", hours: "10:00AM - 6:30PM" },
       { days: "SUN", hours: "CLOSED" },
     ],
-    mapCenter: [22.3072, 73.1818],
+    
     socialMedia: ["Twitter", "Facebook", "Instagram"],
   },
 
@@ -613,30 +613,30 @@ const config = {
                <h2>Our Services</h2>`,
     service_cards: [
       {
-        title: "SEO",
+        title: "Web Development",
         description:
-          "We optimize your site's structure, content, and keywords to rank higher on search engine results pages, increasing your chances of being discovered by potential customers.",
+          "Build responsive, visually stunning, and scalable websites to deliver an outstanding digital presence.",
         icon: "SeoSvg",
         learn_more_link: "#",
       },
       {
-        title: "Content Marketing",
+        title: "Custom Software Development",
         description:
-          "Our content marketing services include creating informative blog posts, engaging videos, and shareable infographics to captivate your audience and drive traffic to your website.",
+          "Develop tailored software solutions that address specific business challenges and ensure maximum efficiency.",
         icon: "ContentSvg",
         learn_more_link: "#",
       },
       {
-        title: "Website Design",
+        title: "Mobile App Development",
         description:
-          "Our design experts craft visually stunning and user-friendly websites optimized for performance and conversion, ensuring a seamless online experience for your visitors.",
+          "Design intuitive, feature-rich mobile applications for iOS and Android platforms, enabling businesses to connect with customers on the go.",
         icon: "WebsiteDesignSvg",
         learn_more_link: "#",
       },
       {
-        title: "Social Media Marketing",
+        title: "E-commerce Platforms",
         description:
-          "Engage and expand your audience across social media platforms with our tailored marketing strategies. From content creation to ad campaigns, we help you connect with your target demographic, foster brand loyalty.",
+          "Create robust and user-friendly e-commerce platforms designed for seamless shopping experiences, enhancing customer satisfaction and business growth.",
         icon: "SocialMediaSvg",
         learn_more_link: "#",
       },

@@ -9,6 +9,7 @@ import FounderProfileCard from "../../components/about/FounderProfileCard";
 import config from "../../config";
 import parse from "html-react-parser";
 import StageProcess from "../../components/about/StageProcess";
+import BrandSlider from "../../components/home/BrandSlider";
 const about = () => {
   const { about } = config;
   const { leftImages, rightImages } = about.imageGallery;
@@ -73,30 +74,7 @@ const about = () => {
           </div>
         </div>
       </motion.div>
-      <motion.div
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{
-          y: 0,
-          opacity: 1,
-          transition: { duration: 2, ease: "easeInOut" },
-        }}
-        viewport={{ once: true }}
-        className="flex flex-col items-center justify-center my-16 lg:my-28 xl:my-36 2xl:my-40"
-      >
-        <p className="text-center">
-          <span className="text-[#F58327] bg-[#232323] text-[0.75rem] xl:text-[0.688rem] leading-[1.5rem] xl:leading-[1.375rem] align-middle text-center font-black inline rounded-full p-2 uppercase satoshi">
-            Brands
-          </span>
-          <h2 className="text-[1.75rem] lg:text-[2.25rem] xl:text-[2.5rem] leading-[1.938rem] lg:leading-[2.5rem] xl:leading-[2.75rem] unbounded-400 text-white mt-2">
-            <span>Brands we have</span>
-            <br className="hidden xl:block" />
-            <span> worked with</span>
-          </h2>
-        </p>
-        <div className="h-[30vh] md:h-[156px] flex items-center justify-center w-[90vw] md:w-[95vw] lg:w-[93vw] 2xl:w-[95vw] overflow-hidden border-[#232323] border rounded-[2rem] mx-auto mt-7">
-          <BrandMarquee />
-        </div>
-      </motion.div>
+      <BrandSlider />
 
       <FounderProfileCard />
       <div className="mx-auto">

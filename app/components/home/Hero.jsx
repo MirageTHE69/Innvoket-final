@@ -32,7 +32,7 @@ const Hero = () => {
       </p>
 
       <Link
-        href="/pages/contact"
+        href="/contact"
         className="bg-[#FF7A30] py-3 px-7 rounded-full transition-colors text-black"
       >
         CONTACT US ↗

@@ -14,7 +14,7 @@ const Specialties = () => {
         </div>
 
         <div className="flex md:justify-end">
-          <p className="text-gray-400 text-sm leading-relaxed max-w-xl">
+          <p className="satoshi text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
             {header.description}
           </p>
         </div>

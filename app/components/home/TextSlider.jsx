@@ -12,18 +12,20 @@ const TextSlider = () => {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="whitespace-nowrap flex"
         >
+          <h1 className="text-3xl md:text-8xl font-unbounded">{message}</h1>
           <h1 className="text-3xl md:text-8xl font-unbounded">{message}</h1>
         </motion.div>
         
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="whitespace-nowrap flex"
         >
+          <h1 className="text-3xl md:text-8xl font-unbounded">{message}</h1>
           <h1 className="text-3xl md:text-8xl font-unbounded">{message}</h1>
         </motion.div>
       </div>

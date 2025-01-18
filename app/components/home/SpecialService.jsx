@@ -70,7 +70,7 @@ export default function SpecialService() {
   };
 
   return (
-    <section className="text-white py-20 md:max-w-[75vw] mx-auto">
+    <section className="text-white py-20  mx-auto">
       <motion.div
         className="container mx-auto px-4"
         initial={{ y: 100 }}

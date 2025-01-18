@@ -91,7 +91,7 @@ const CaseStudies = () => {
           transition={{ duration: 1 }}
         >
           <Link
-            href="/pages/projects"
+            href="/projects"
             className="bg-[#FF7A30] py-3 px-7 rounded-full transition-colors text-black"
           >
             VIEW ALL PROJECTS ↗

@@ -103,7 +103,7 @@ export default function Service() {
           transition={{ duration: 1 }}
         >
           <Link
-            href="/pages/services"
+            href="/services"
             className="bg-[#FF7A30] py-3 px-7 rounded-full transition-colors text-black text-sm md:text-base"
           >
             VIEW ALL SERVICES ↗
