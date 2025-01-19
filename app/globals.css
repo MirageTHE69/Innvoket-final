@@ -36,6 +36,7 @@ body {
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.608) 0px -150px 30px -28px inset;
 }
+
 /* Accordion */
 .button-hover:hover .icon-hover {
   background-color: #f58327;
@@ -48,6 +49,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -70,7 +72,7 @@ body {
   animation-direction: reverse;
 }
 
-.marquee-content > * {
+.marquee-content>* {
   flex: 0 0 auto;
   margin: 0 1rem;
 }
@@ -90,10 +92,12 @@ body {
   0% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 .cursor-none {
   cursor: none;
 }
@@ -105,10 +109,61 @@ body {
 }
 
 .shadow-custom {
-  box-shadow: 0 0 50px 100px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  box-shadow: 0 0 50px 100px rgba(0, 0, 0, 0.5);
+  /* Adjust the values as needed */
 }
 
 /*^ Values-Clamp */
 .values-clamp {
   font-size: clamp(4.125rem, 0rem + 20.625vw, 33rem);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
