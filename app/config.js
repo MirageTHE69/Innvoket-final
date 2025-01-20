@@ -198,17 +198,17 @@ const config = {
     contactDetails: [
       {
         icon: "Mail",
-        text: "agencee@email.com",
-        link: "mailto:agencee@email.com",
+        text: "info@innvoket.com",
+        link: "mailto:info@innvoket.com",
       },
       {
         icon: "Phone",
-        text: "+54 2541 22 55 66",
-        link: "tel:+542541225566",
+        text: "+91 9825720827",
+        link: "tel:+919825720827",
       },
       {
         icon: "MapPin",
-        text: "123 Main Street Anytown, USA, 2141",
+        text: "4-VATIKA VILLA, LAAL BAUG, MANJALPUR, VADODARA, GUJARAT INDIA",
         link: "https://www.google.com/maps?q=123+Main+Street+Anytown,+USA,+2141",
       },
     ],
@@ -218,22 +218,10 @@ const config = {
       { title: "Services", link: "/services" },
       { title: "Projects", link: "/projects" },
       { title: "Blog", link: "/blog" },
-      { title: "Review", link: "/reviews" },
+      { title: "staff augmentation", link: "/staff augmentation" },
       { title: "Contact", link: "/contact" },
     ],
-    serviceLinks: [
-      { title: "SEO", link: "/services/seo" },
-      { title: "Content Marketing", link: "/services/content-marketing" },
-      { title: "Website Design", link: "/services/website-design" },
-      {
-        title: "Social Media Marketing",
-        link: "/services/social-media-marketing",
-      },
-    ],
-    otherPagesLinks: [
-      { title: "License", link: "/license" },
-      { title: "404", link: "/404" },
-    ],
+
     socialLinks: [
       { platform: "Facebook", url: "https://facebook.com", icon: "Facebook" },
       { platform: "Twitter", url: "https://twitter.com", icon: "Twitter" },
@@ -307,7 +295,7 @@ const config = {
       { days: "SAT", hours: "10:00AM - 6:30PM" },
       { days: "SUN", hours: "CLOSED" },
     ],
-    
+
     socialMedia: ["Twitter", "Facebook", "Instagram"],
   },
 

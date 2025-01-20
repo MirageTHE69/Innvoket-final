@@ -44,7 +44,7 @@ export default function Footer() {
               <input
                 type="email"
                 id="email"
-                placeholder="jane@framer.com"
+                placeholder="jane@innvoket.com"
                 className="w-full px-4 py-3 rounded-md bg-neutral-800 text-white border border-neutral-700 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
