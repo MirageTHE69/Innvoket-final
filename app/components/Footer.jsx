@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="px-2 md:px-10">
-      <div className="flex flex-col md:flex-row items-center justify-between text-white px-1 md:px-16 py-10 md:py-20">
+      <div className="flex flex-col md:flex-row items-between justify-between text-white px-1 md:px-16 py-10 md:py-20">
         <div className="md:w-1/2">
           <h1 className="text-6xl md:text-[8rem] font-bold leading-[-50rem]">
             Let&apos;s <br />
@@ -101,28 +101,6 @@ export default function Footer() {
               <h2 className="text-orange-500">Menu</h2>
               <ul className="space-y-2 text-white text-center md:text-left text-sm">
                 {config.footer.menuLinks.map((item, index) => (
-                  <li key={index}>
-                    <Link href={item.link}>{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="flex flex-col items-center md:items-start">
-              <h2 className="text-orange-500">Services</h2>
-              <ul className="space-y-2 text-white text-center md:text-left text-sm">
-                {config.footer.serviceLinks.map((item, index) => (
-                  <li key={index}>
-                    <Link href={item.link}>{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="flex flex-col items-center md:items-start">
-              <h2 className="text-orange-500">Other Pages</h2>
-              <ul className="space-y-2 text-white text-center md:text-left text-sm">
-                {config.footer.otherPagesLinks.map((item, index) => (
                   <li key={index}>
                     <Link href={item.link}>{item.title}</Link>
                   </li>
