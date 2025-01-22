@@ -204,17 +204,17 @@ const config = {
     contactDetails: [
       {
         icon: "Mail",
-        text: "agencee@email.com",
-        link: "mailto:agencee@email.com",
+        text: "info@innvoket.com",
+        link: "mailto:info@innvoket.com",
       },
       {
         icon: "Phone",
-        text: "+54 2541 22 55 66",
-        link: "tel:+542541225566",
+        text: "+91 9825720827",
+        link: "tel:+919825720827",
       },
       {
         icon: "MapPin",
-        text: "123 Main Street Anytown, USA, 2141",
+        text: "806/6 signet hub ,op road , vadodara, india ",
         link: "https://www.google.com/maps?q=123+Main+Street+Anytown,+USA,+2141",
       },
     ],
@@ -243,7 +243,11 @@ const config = {
     socialLinks: [
       { platform: "Facebook", url: "https://facebook.com", icon: "Facebook" },
       { platform: "Twitter", url: "https://twitter.com", icon: "Twitter" },
-      { platform: "Linkedin", url: "https://linkedin.com", icon: "Linkedin" },
+      {
+        platform: "Linkedin",
+        url: "https://www.linkedin.com/company/innvoket-tech-llp/?viewAsMember=true",
+        icon: "Linkedin",
+      },
       {
         platform: "Instagram",
         url: "https://instagram.com",
@@ -305,8 +309,8 @@ const config = {
 
   //Contact Page
   contact: {
-    hotline: "9825720827",
-    address: "4-VATIKA VILLA, LAAL BAUG, MANJALPUR, VADODARA, GUJARAT INDIA",
+    hotline: "+91 9825720827",
+    address: "806/6 signet hub ,op road , vadodara , India",
     email: "INFO@INNVOKETTECH.COM",
     openingHours: [
       { days: "MON TO FRI", hours: "9:00AM - 8:30PM" },
