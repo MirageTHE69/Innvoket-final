@@ -236,7 +236,11 @@ const config = {
     socialLinks: [
       { platform: "Facebook", url: "https://facebook.com", icon: "Facebook" },
       { platform: "Twitter", url: "https://twitter.com", icon: "Twitter" },
-      { platform: "Linkedin", url: "https://linkedin.com", icon: "Linkedin" },
+      {
+        platform: "Linkedin",
+        url: "https://www.linkedin.com/company/innvoket-tech-llp/?viewAsMember=true",
+        icon: "Linkedin",
+      },
       {
         platform: "Instagram",
         url: "https://instagram.com",
