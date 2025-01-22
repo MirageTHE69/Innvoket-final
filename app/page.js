@@ -22,7 +22,6 @@ const Home = () => {
       <CaseStudies />
       <Testimonials />
       <Specialties />
-      <Staffing />
     </div>
   );
 };

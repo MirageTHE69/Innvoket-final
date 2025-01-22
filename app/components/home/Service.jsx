@@ -22,37 +22,6 @@ export default function Service() {
       </div>
       <div>
         <p className="text-gray-400">{description}</p>
-        <Link
-          href={link}
-          className="text-white font-semibold pt-5 text-[0.75rem] leading-[1.5rem] flex items-center gap-2 no-underline unbounded-400"
-        >
-          LEARN MORE
-          <span className="w-7 h-7 rounded-full border-[#333] border p-1 flex justify-center items-center transition duration-900 bg-transparent group-hover:bg-[#F58327]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-              focusable="false"
-              className="transition-transform duration-300 group-hover:rotate-[45deg]"
-              style={{
-                userSelect: "none",
-                width: "100%",
-                height: "100%",
-                display: "inline-block",
-                fill: "var(--token-a3567fc0-2c6f-4fa8-ac8f-89ddd158e98d, rgb(255, 255, 255))",
-                color:
-                  "var(--token-a3567fc0-2c6f-4fa8-ac8f-89ddd158e98d, rgb(255, 255, 255))",
-                flexShrink: 0,
-              }}
-            >
-              <g
-                color="var(--token-a3567fc0-2c6f-4fa8-ac8f-89ddd158e98d, rgb(255, 255, 255))"
-                weight="regular"
-              >
-                <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z" />
-              </g>
-            </svg>
-          </span>
-        </Link>
       </div>
     </div>
   );
