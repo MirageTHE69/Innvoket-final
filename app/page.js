@@ -1,3 +1,4 @@
+import Staffing from "./(pages)/staffing/page";
 import BrandSlider from "./components/home/BrandSlider";
 import CaseStudies from "./components/home/CaseStudies";
 import Hero from "./components/home/Hero";
@@ -21,6 +22,7 @@ const Home = () => {
       <CaseStudies />
       <Testimonials />
       <Specialties />
+      <Staffing />
     </div>
   );
 };
