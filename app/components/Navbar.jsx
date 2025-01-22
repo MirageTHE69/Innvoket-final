@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation"; // Import usePathname
 import config from "../config";
 
@@ -21,10 +22,14 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between fixed top-0 left-0 right-0 w-full px-4 md:px-8 py-1 backdrop-blur-lg bg-[#0d0d0d] md:bg-transparent z-50">
-      <div className="w-28">
-        <img src={config.navbar.logo} alt="Logo" />
-      </div>
-
+      <Image 
+          src={`/${config.navbar.logo}`} // Add forward slash
+          alt="Innvoket Logo"
+          width={112}
+          height={40}
+          priority
+        />
+ 
       <div className="hidden md:flex space-x-4 rounded-full bg-[#0d0d0d] border-[0.5px] p-2 text-sm">
         <Link href="/" className={`rounded-full px-4 py-2 ${isActive("/")}`}>
           HOME

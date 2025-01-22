@@ -2,8 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-const CaseStudies = ({ image, title, description }) => {
+const CaseStudies = ({ image, title, description, slug }) => {
+  const router = useRouter();
   const [cursorPosition, setCursorPosition] = useState({ x: -100, y: -100 });
   const [isHovering, setIsHovering] = useState(false);
 
@@ -17,6 +19,10 @@ const CaseStudies = ({ image, title, description }) => {
     window.addEventListener("mousemove", updateCursorPosition);
     return () => window.removeEventListener("mousemove", updateCursorPosition);
   }, [isHovering]);
+
+  const handleClick = () => {
+    router.push(`/projects/${slug}`);
+  };
 
   return (
     <>
@@ -39,6 +45,7 @@ const CaseStudies = ({ image, title, description }) => {
 
       {/* Case Study Card */}
       <div
+        onClick={handleClick}
         className="relative flex flex-col items-center justify-center custom-break-1200:flex-row w-full text-white rounded-lg overflow-hidden shadow-lg gap-4 mb-8 group cursor-none"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
