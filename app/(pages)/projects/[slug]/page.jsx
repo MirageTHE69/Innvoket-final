@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import config from "../../../config";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import CaseStudies from "../../../components/projects/CaseStudies";
 
 const CaseStudyDetail = () => {
   const { slug } = useParams();
@@ -19,9 +20,12 @@ const CaseStudyDetail = () => {
     );
   }
 
+  const { socialMedia } = config.contact;
+
   return (
     <div className="px-4 md:px-8 py-8 md:py-28">
       <div className="grid md:grid-cols-2 gap-4">
+        
         <div className="rounded-3xl bg-[#161616] md:h-[80vh] flex flex-col justify-center space-y-4 text-white p-4">
           <span className="text-[#F58327] bg-[#222222] text-xs lg:text-sm rounded-full px-4 py-2 satoshi self-start">
             OUR THREE STEP PROCESS
@@ -30,13 +34,41 @@ const CaseStudyDetail = () => {
             {caseStudy.title}
           </h1>
         </div>
+
         <div className="md:h-[80vh]">
             <img src={caseStudy.image} alt="" className="rounded-3xl w-full h-full object-cover"/>
         </div>
+
         <div className="md:col-span-2 rounded-3xl bg-[#161616] md:h-[40vh] flex items-center justify-center p-4 text-center satoshi">
           <h2 className="text-xl md:text-2xl text-white md:w-3/4">{caseStudy.slugDesc}</h2>
         </div>
+
+        <div className="text-white mx-48 w-[64vw]">
+          <p>{caseStudy.info}</p>
+        </div>
+
       </div>
+
+
+
+      <div>
+        <img src={caseStudy.BigImage} alt="" className="rounded-3xl w-full h-full my-16"/>
+      </div>
+
+    
+
+      <div className="flex flex-col  justify-center items-center text-white my-4">
+          <button>Other Projects</button>
+          <p>Other Case Studies</p>
+          <p>Check our other project case studies with detailed explanations</p>
+          <button>All Projects</button>
+        </div>
+
+
+      <div>
+        <CaseStudies />
+      </div>
+
     </div>
   );
 };

@@ -1,3 +1,9 @@
+import Project1 from './components/Projectinfo/project1';
+import Project2 from './components/Projectinfo/project2';
+import Project3 from './components/Projectinfo/project3';
+import Project4 from './components/Projectinfo/project4';
+
+
 const config = {
   //Navbar
 
@@ -694,7 +700,9 @@ const config = {
         slug: "elite-sports-training",
         slugDesc:
           "A state-of-the-art sports training platform built for athletes, trainers, and administrators, combining advanced features for customized training programs, performance tracking, and streamlined workflows.",
-      },
+        info:<Project1/>,
+        BigImage:"https://framerusercontent.com/images/ubqFJP9oL8a6nPLXz4l9WPp2I.png",
+        },
       {
         image:
           "https://framerusercontent.com/images/s8t8FHEFLWZjLi3QAVRAhC1wnEo.png",
@@ -703,6 +711,9 @@ const config = {
           "Real-time data tracking and intuitive tools empowered dealers to boost efficiency.",
         slug: "antivirus-dealers-portal",
         slugDesc: "A high-performance web and mobile platform designed to streamline dealer operations, boost productivity, and deliver a secure, user-friendly experience through advanced features and seamless connectivity.",
+     info:<Project2/>,
+     BigImage:"https://framerusercontent.com/images/s8t8FHEFLWZjLi3QAVRAhC1wnEo.png",
+
       },
       {
         image:
@@ -713,6 +724,9 @@ const config = {
           "Unified web and mobile platforms streamline workflows, reducing manual processes.",
         slug: "crm-inventory-management",
         slugDesc: "Innvoket delivered a high-performance CRM & Inventory Management System integrated with a cross-platform mobile app to streamline operations, enable real-time tracking, and enhance team productivity both on the web and on the move.",
+        info:<Project3/>,
+        BigImage:  "https://framerusercontent.com/images/ItK8dymX8GvITGk4W4bLNzTp8.png",
+
       },
       {
         image:
@@ -723,6 +737,9 @@ const config = {
           "Unified Web and Mobile platforms ensure learning and training are available anytime, anywhere.",
         slug: "chess-in-chunks",
         slugDesc: "Innvoket developed Chess in Chunks, a feature-rich Web and Mobile platform designed to transform the chess learning experience for academies, students, and coaches. The system streamlines academy operations, enhances student engagement, and simplifies tournament management with mobile-responsive and secure technology.",
+        info:<Project4/>,
+        BigImage:"https://framerusercontent.com/images/kwLu1oAWhAObHZXU4wBitDsSmIQ.png",
+
       },
     ],
   },
