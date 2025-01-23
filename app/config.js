@@ -17,10 +17,8 @@ const config = {
     message: ". INNVOKET WE BUILD FUTURE",
   },
 
-  //Services
-
   services: {
-    heading: "What we are offering",
+    heading: "What We Are Offering",
     subheading: "Services",
     cards: [
       {
@@ -28,7 +26,7 @@ const config = {
         icon: "Globe",
         title: "Web Development",
         description:
-          "Build responsive, visually stunning, and scalable websites to deliver an outstanding digital presence.",
+          "As a leading web development company, we build responsive, visually stunning, and scalable websites that enhance your digital presence and drive business growth.",
         link: "/",
       },
       {
@@ -36,7 +34,7 @@ const config = {
         icon: "SquareMenu",
         title: "Custom Software Development",
         description:
-          "Develop tailored software solutions that address specific business challenges and ensure maximum efficiency.",
+          "Our software development company specializes in creating tailored software solutions to address unique business challenges, ensuring efficiency and scalability.",
         link: "/",
       },
       {
@@ -44,7 +42,7 @@ const config = {
         icon: "SquareMenu",
         title: "Mobile App Development",
         description:
-          "Design intuitive, feature-rich mobile applications for iOS and Android platforms, enabling businesses to connect with customers on the go.",
+          "Design intuitive, feature-rich mobile applications for iOS and Android platforms with our IT solutions, enabling small businesses to connect with customers anytime, anywhere.",
         link: "/",
       },
       {
@@ -52,13 +50,11 @@ const config = {
         icon: "PanelTop",
         title: "E-commerce Platforms",
         description:
-          "Create robust and user-friendly e-commerce platforms designed for seamless shopping experiences, enhancing customer satisfaction and business growth.",
+          "Develop robust and user-friendly e-commerce platforms with our website development company to deliver seamless shopping experiences and drive revenue.",
         link: "/",
       },
     ],
   },
-
-  //Special Services
 
   specialService: {
     heading: "Specialized Business and Enterprise Solutions",
@@ -69,7 +65,7 @@ const config = {
         icon: "Globe",
         title: "Real Estate Solutions",
         description:
-          "Streamline property management, lead tracking, and asset organization to close deals faster.",
+          "Our IT solutions for real estate streamline property management, lead tracking, and asset organization, helping businesses close deals faster and more efficiently.",
         link: "/",
       },
       {
@@ -77,7 +73,7 @@ const config = {
         icon: "SquareMenu",
         title: "Manufacturing Solutions",
         description:
-          "Optimize production, manage supply chains, and ensure quality control with customized ERP systems.",
+          "Optimize production workflows, manage supply chains, and ensure quality control with customized ERP systems provided by our software development company.",
         link: "/",
       },
       {
@@ -85,15 +81,15 @@ const config = {
         icon: "SquareMenu",
         title: "Retail & E-commerce Solutions",
         description:
-          "Boost sales with automated inventory tracking, POS systems, and personalized customer engagement tools.",
+          "Boost sales and streamline operations with automated inventory tracking, POS systems, and personalized customer engagement tools developed by our website development company.",
         link: "/",
       },
       {
         id: 4,
         icon: "PanelTop",
-        title: "Healthcare Solution",
+        title: "Healthcare Solutions",
         description:
-          "Enhance patient care with appointment scheduling, inventory tracking for medical supplies, and automated staff management.",
+          "Enhance patient care with appointment scheduling, medical inventory tracking, and automated staff management solutions tailored by our software outsourcing company.",
         link: "/",
       },
     ],
@@ -119,27 +115,27 @@ const config = {
       {
         title: "Proven Track Record",
         description:
-          "We have built a reputation as a trusted and reliable partner in achieving business success.",
+          "As a leading web development company and provider of managed IT services for small businesses, we have a proven reputation for delivering impactful digital solutions and driving business growth.",
         icon: "Rocket",
       },
       {
         title: "Tailored Solutions",
         description:
-          "We offer personalized solutions tailored to your specific goals, audience, and industry.",
+          "Our software outsourcing company specializes in creating customized IT solutions that align perfectly with your goals, audience, and industry-specific needs.",
         icon: "Network",
       },
       {
         title: "Client-Centric Focus",
         description:
-          "Your success is our priority. We prioritize understanding your business goals.",
+          "Your success is our priority. From website developers near me to outsourcing software development, we focus on delivering solutions that meet your exact requirements and exceed expectations.",
         icon: "Target",
       },
     ],
     additionalValues: [
-      "Continuous Innovation",
-      "Dedicated Support",
-      "Positive Client Experiences",
-      "Commitment to Excellence",
+      "Continuous Innovation in Technology",
+      "24/7 Dedicated Support",
+      "Exceptional Client Outcomes",
+      "Commitment to Excellence in Software Development",
     ],
   },
 
@@ -149,41 +145,40 @@ const config = {
     {
       img: "case1.avif",
       title: "Elite Sports Training Web & Mobile App Development",
-      desc: "Empowered trainees with personalized exercise schedules and metrics tracking.",
+      desc: "Our web development company created a platform that empowered trainees with personalized exercise schedules, metrics tracking, and seamless cross-platform usability.",
     },
     {
       img: "case2.avif",
       title:
         "Comprehensive CRM & Inventory Management System with Feature-Rich Mobile App",
-      desc: "Unified web and mobile platforms streamline workflows, reducing manual processes.",
+      desc: "Developed by our software outsourcing company, this unified web and mobile solution streamlined workflows, reduced manual processes, and enhanced business operations.",
     },
     {
       img: "case3.avif",
       title: "Antivirus Dealers Web & Mobile Portal Development",
-      desc: "Real-time data tracking and intuitive tools empowered dealers to boost efficiency.",
+      desc: "We designed a real-time data tracking portal with intuitive tools that empowered dealers to boost efficiency, supported by our managed IT services for small businesses.",
     },
     {
       img: "case4.avif",
       title:
         "Chess in Chunks: A Unified Platform for Chess Academies, Students, and Coaches",
-      desc: "Unified Web and Mobile platforms ensure learning and training are available anytime, anywhere.",
+      desc: "Created a unified web and mobile platform ensuring on-demand access to learning and training, powered by our expertise in website development and IT solutions.",
     },
   ],
 
-  //Specialties
 
   specialties: {
     header: {
       title: "WHY US",
       description:
-        "Innvoket transforms businesses with cutting-edge IT and automation solutions tailored to your industry. We deliver measurable results through seamless integrations, innovative technologies, and a focus on customer success.",
+        "Innvoket stands out as a top-tier web development company and IT solutions provider, transforming businesses with cutting-edge IT and automation solutions tailored to your industry. By leveraging innovative technologies, outsourcing software development expertise, and a client-first approach, we deliver measurable results with a focus on customer success.",
     },
     largeImageSection: {
       image: "section.avif",
       efficiencyBoostPercentage: "150%",
       efficiencyBoostTitle: "Workflow Efficiency Boost",
       efficiencyBoostDescription:
-        "Our clients choose us for our ability to simplify complexities, enabling them to focus on growth and innovation.",
+        "Our clients trust us to simplify complexities through tailored solutions, empowering them to focus on business growth and innovation with enhanced IT services.",
     },
     gridItems: [
       {
@@ -193,7 +188,7 @@ const config = {
         title: "ENHANCED PRODUCTIVITY",
         percentage: "80%",
         description:
-          "Innvoket’s automation systems have drastically improved productivity by automating repetitive tasks, reducing errors, and enabling faster decision-making.",
+          "Innvoket’s automation systems have boosted productivity by automating repetitive tasks, reducing errors, and enabling faster, data-driven decision-making. Our expertise as a software development company ensures seamless integrations for maximum efficiency.",
       },
     ],
   },
@@ -620,33 +615,33 @@ const config = {
 
   servicesPage: {
     heading: `<h2>Discover</h2>
-               <h2>Our Services</h2>`,
+              <h2>Our Services</h2>`,
     service_cards: [
       {
         title: "Web Development",
         description:
-          "Build responsive, visually stunning, and scalable websites to deliver an outstanding digital presence.",
+          "As a leading web development company, we specialize in building responsive, visually stunning, and scalable websites to deliver an outstanding digital presence.",
         icon: "SeoSvg",
         learn_more_link: "#",
       },
       {
         title: "Custom Software Development",
         description:
-          "Develop tailored software solutions that address specific business challenges and ensure maximum efficiency.",
+          "Our software development company creates tailored software solutions that address specific business challenges and ensure maximum efficiency, helping you streamline operations.",
         icon: "ContentSvg",
         learn_more_link: "#",
       },
       {
         title: "Mobile App Development",
         description:
-          "Design intuitive, feature-rich mobile applications for iOS and Android platforms, enabling businesses to connect with customers on the go.",
+          "Design intuitive, feature-rich mobile applications for iOS and Android platforms, enabling businesses to connect with customers on the go, whether you're looking for local website developers near me or a comprehensive app solution.",
         icon: "WebsiteDesignSvg",
         learn_more_link: "#",
       },
       {
         title: "E-commerce Platforms",
         description:
-          "Create robust and user-friendly e-commerce platforms designed for seamless shopping experiences, enhancing customer satisfaction and business growth.",
+          "We build robust and user-friendly e-commerce platforms designed for seamless shopping experiences, enhancing customer satisfaction and business growth, offering managed IT services for small businesses.",
         icon: "SocialMediaSvg",
         learn_more_link: "#",
       },
@@ -655,37 +650,37 @@ const config = {
       {
         title: "Proven Track Record",
         description:
-          "We have built a reputation as a trusted and reliable partner in achieving business success.",
+          "As a trusted web development company, we have built a reputation for delivering reliable IT solutions and achieving business success.",
         icon: "RocketSVG",
       },
       {
         title: "Tailored Solutions",
         description:
-          "We offer personalized solutions tailored to your specific goals, audience, and industry.",
+          "We offer personalized software outsourcing companies that provide tailored IT solutions, designed to meet your specific business goals, audience, and industry needs.",
         icon: "NetworkSVG",
       },
       {
         title: "Client-Centric Focus",
         description:
-          "Your success is our priority. We prioritize understanding your business goals.",
+          "Your success is our priority. We prioritize understanding your business goals, whether you're seeking small business IT services near me or professional outsourcing software development.",
         icon: "ClientSVG",
       },
       {
         title: "Transparent Communication",
         description:
-          "We believe in open and honest communication every step of the way.",
+          "We believe in open and honest communication, whether you're looking for IT companies near me or seeking services from a dedicated software development company.",
         icon: "CommunicationSVG",
       },
       {
         title: "Dedicated Support",
         description:
-          "Your success is our priority, and we're here to support you every step of the way.",
+          "Your success is our priority, and we're here to support you every step of the way, offering managed IT services for small businesses and continuous assistance.",
         icon: "SupportSVG",
       },
       {
         title: "Expertise Across Industries",
         description:
-          "Our team has extensive experience working across various industries.",
+          "Our software development company has extensive experience working across various industries, providing specialized IT solutions to meet unique business challenges.",
         icon: "SupportSVG",
       },
     ],
@@ -700,24 +695,24 @@ const config = {
           "https://framerusercontent.com/images/ubqFJP9oL8a6nPLXz4l9WPp2I.png",
         title: "Elite Sports Training Web & Mobile App Development",
         description:
-          "Empowered trainees with personalized exercise schedules and metrics tracking.",
+          "Empowered trainees with personalized exercise schedules and metrics tracking. As a top web development company, we ensured optimal user experience.",
         slug: "elite-sports-training",
         slugDesc:
           "A state-of-the-art sports training platform built for athletes, trainers, and administrators, combining advanced features for customized training programs, performance tracking, and streamlined workflows.",
-        info:<Project1/>,
-        BigImage:"https://framerusercontent.com/images/ubqFJP9oL8a6nPLXz4l9WPp2I.png",
-        },
+        info: <Project1 />,
+        BigImage: "https://framerusercontent.com/images/ubqFJP9oL8a6nPLXz4l9WPp2I.png",
+      },
       {
         image:
           "https://framerusercontent.com/images/s8t8FHEFLWZjLi3QAVRAhC1wnEo.png",
         title: "Antivirus Dealers Web & Mobile Portal Development",
         description:
-          "Real-time data tracking and intuitive tools empowered dealers to boost efficiency.",
+          "Real-time data tracking and intuitive tools empowered dealers to boost efficiency with the support of our software development company expertise.",
         slug: "antivirus-dealers-portal",
-        slugDesc: "A high-performance web and mobile platform designed to streamline dealer operations, boost productivity, and deliver a secure, user-friendly experience through advanced features and seamless connectivity.",
-     info:<Project2/>,
-     BigImage:"https://framerusercontent.com/images/s8t8FHEFLWZjLi3QAVRAhC1wnEo.png",
-
+        slugDesc:
+          "A high-performance web and mobile platform designed to streamline dealer operations, boost productivity, and deliver a secure, user-friendly experience through advanced features and seamless connectivity.",
+        info: <Project2 />,
+        BigImage: "https://framerusercontent.com/images/s8t8FHEFLWZjLi3QAVRAhC1wnEo.png",
       },
       {
         image:
@@ -725,12 +720,12 @@ const config = {
         title:
           "Comprehensive CRM & Inventory Management System with Feature-Rich Mobile App",
         description:
-          "Unified web and mobile platforms streamline workflows, reducing manual processes.",
+          "Unified web and mobile platforms streamline workflows, reducing manual processes. We provided managed IT services for small businesses to enhance their operational efficiency.",
         slug: "crm-inventory-management",
-        slugDesc: "Innvoket delivered a high-performance CRM & Inventory Management System integrated with a cross-platform mobile app to streamline operations, enable real-time tracking, and enhance team productivity both on the web and on the move.",
-        info:<Project3/>,
-        BigImage:  "https://framerusercontent.com/images/ItK8dymX8GvITGk4W4bLNzTp8.png",
-
+        slugDesc:
+          "Innvoket delivered a high-performance CRM & Inventory Management System integrated with a cross-platform mobile app to streamline operations, enable real-time tracking, and enhance team productivity both on the web and on the move.",
+        info: <Project3 />,
+        BigImage: "https://framerusercontent.com/images/ItK8dymX8GvITGk4W4bLNzTp8.png",
       },
       {
         image:
@@ -738,15 +733,16 @@ const config = {
         title:
           "Chess in Chunks: A Unified Platform for Chess Academies, Students, and Coaches",
         description:
-          "Unified Web and Mobile platforms ensure learning and training are available anytime, anywhere.",
+          "Unified Web and Mobile platforms ensure learning and training are available anytime, anywhere. As a leading software development company, we created an integrated experience.",
         slug: "chess-in-chunks",
-        slugDesc: "Innvoket developed Chess in Chunks, a feature-rich Web and Mobile platform designed to transform the chess learning experience for academies, students, and coaches. The system streamlines academy operations, enhances student engagement, and simplifies tournament management with mobile-responsive and secure technology.",
-        info:<Project4/>,
-        BigImage:"https://framerusercontent.com/images/kwLu1oAWhAObHZXU4wBitDsSmIQ.png",
-
+        slugDesc:
+          "Innvoket developed Chess in Chunks, a feature-rich Web and Mobile platform designed to transform the chess learning experience for academies, students, and coaches. The system streamlines academy operations, enhances student engagement, and simplifies tournament management with mobile-responsive and secure technology.",
+        info: <Project4 />,
+        BigImage: "https://framerusercontent.com/images/kwLu1oAWhAObHZXU4wBitDsSmIQ.png",
       },
     ],
   },
-};
+}
+
 
 export default config;

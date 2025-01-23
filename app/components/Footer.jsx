@@ -75,12 +75,13 @@ export default function Footer() {
       </div>
 
       <div className="bg-[#161616] rounded-3xl mb-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-72 p-4">
-          <div className="flex flex-col space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-15 md:gap-x-36 p-8">
+          {/* Contact Info Section */}
+          <div className="flex flex-col space-y-6">
             {config.footer.contactDetails.map((contact, index) => (
               <div
                 key={index}
-                className="flex flex-col space-y-4 bg-[#1d1d1d] rounded-3xl px-4 py-6"
+                className="flex items-center space-x-4 bg-[#1d1d1d] rounded-3xl px-6 py-6"
               >
                 <IconRenderer icon={contact.icon} />
                 <p className="text-gray-300">
@@ -88,6 +89,7 @@ export default function Footer() {
                     href={contact.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover:underline"
                   >
                     {contact.text}
                   </a>
@@ -96,15 +98,37 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3">
+          {/* Menu and Staff Augmentation Sections (Horizontal Layout) */}
+          <div className="flex flex-row justify-between gap-1"> {/* Reduced gap */}
+            {/* Menu Section */}
             <div className="flex flex-col items-center md:items-start">
-              <h2 className="text-orange-500">Menu</h2>
-              <ul className="space-y-2 text-white text-center md:text-left text-sm">
+              <h2 className="text-orange-500 mb-4">Menu</h2>
+              <ul className="space-y-3 text-white text-center md:text-left text-sm">
                 {config.footer.menuLinks.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className="hover:text-orange-500">
                     <Link href={item.link}>{item.title}</Link>
                   </li>
                 ))}
+              </ul>
+            </div>
+
+            {/* Staff Augmentation Section */}
+            <div className="flex flex-col items-center md:items-start">
+              <h2 className="text-orange-500 mb-4">Staff Augmentation</h2>
+              <ul className="space-y-3 text-white text-center md:text-left text-sm">
+                {/* Updated links to navigate to /staffing */}
+                <li className="hover:text-orange-500">
+                  <Link href="/staffing">QA Analyst</Link>
+                </li>
+                <li className="hover:text-orange-500">
+                  <Link href="/staffing">Full Stack Developer</Link>
+                </li>
+                <li className="hover:text-orange-500">
+                  <Link href="/staffing">Backend Developer</Link>
+                </li>
+                <li className="hover:text-orange-500">
+                  <Link href="/staffing">Business Analyst</Link>
+                </li>
               </ul>
             </div>
           </div>
