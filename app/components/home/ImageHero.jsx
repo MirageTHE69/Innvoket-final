@@ -27,14 +27,14 @@ const ImageHero = () => {
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row items-center justify-center">
         <div className="bg-[rgba(168,132,132,0.5)] backdrop-blur-sm rounded-full w-40 h-40 flex items-center justify-center">
           <div className="text-white text-center">
-            <h2 className="text-xl md:text-3xl font-bold">1.5+</h2>
+            <h2 className="text-xl md:text-3xl font-bold">5+</h2>
             <p className="text-sm">Years of Experience</p>
           </div>
         </div>
 
         <div className="bg-[rgba(168,132,132,0.5)] backdrop-blur-sm rounded-full w-40 h-40 flex items-center justify-center -ml-16 -my-8 md:-ml-4">
           <div className="text-white text-center">
-            <h2 className="text-xl md:text-3xl font-bold">15+</h2>
+            <h2 className="text-xl md:text-3xl font-bold">50+</h2>
             <p className="text-sm">Successful Projects</p>
           </div>
         </div>
