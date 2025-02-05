@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-60HH3NY4P0"></script>
         <script>
-          {`
+          {`'use client';
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
