@@ -15,7 +15,9 @@ const about = () => {
   const { leftImages, rightImages } = about.imageGallery;
 
   return (
+    
     <div className="overflow-hidden py-10">
+      
       <div className="wrapper pt-5 h-[50vh] lg:mb-[3rem] custom-break-1200:mb-[15rem] xl:mb-[17rem] flex items-center justify-center">
         <motion.div
           initial={{ y: 100, opacity: 0 }}
