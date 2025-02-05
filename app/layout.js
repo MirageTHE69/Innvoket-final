@@ -50,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GT-K8FTL2ZV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         <Navbar />
         {children}
         <Footer />
