@@ -31,6 +31,25 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-EDEQBRHRD1"
+        />
+        <Script
+          id="google-analytics-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-EDEQBRHRD1');
+            `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -45,7 +64,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        {/* Google Tag Manager - Head */}
+        {/* Google Tag Manager */}
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -56,20 +75,6 @@ export default function RootLayout({ children }) {
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','GTM-W8J2XZCQ');
-            `,
-          }}
-        />
-
-        {/* Google Analytics */}
-        <Script
-          id="ga-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-60HH3NY4P0');
             `,
           }}
         />
